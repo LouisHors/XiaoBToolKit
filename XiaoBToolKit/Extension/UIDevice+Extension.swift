@@ -3,10 +3,11 @@
 //  vankeclub
 //
 //  Created by 刘豪 on 2018/11/15.
-//  Copyright © 2018 yhb. All rights reserved.
 //
 
 let screenScale = UIScreen.main.scale
+let XBScreenW = UIScreen.main.bounds.width
+let XBScreenH = UIScreen.main.bounds.height
 
 struct iPhoneDisplay {
     
@@ -32,14 +33,14 @@ extension UIDevice {
 
 extension Int {
     func widthScale() -> CGFloat {
-        return CGFloat(self) * SCREEN_WIDTH / 375.0
+        return CGFloat(self) * XBScreenW / 375.0
     }
     
     func heightScale() -> CGFloat {
         if UIDevice.isX() {
-            return CGFloat(self) * SCREEN_WIDTH / 375.0
+            return CGFloat(self) * XBScreenW / 375.0
         }else {
-            return CGFloat(self) * SCREEN_HEIGHT / 667.0
+            return CGFloat(self) * XBScreenH / 667.0
         }
     }
 }
@@ -47,16 +48,16 @@ extension Int {
 extension CGFloat {
     var widthScale: CGFloat {
         get {
-            return self * SCREEN_WIDTH / 375.0
+            return self * XBScreenW / 375.0
         }
     }
     
     var heightScale: CGFloat {
         get {
             if UIDevice.isX() {
-                return self * SCREEN_WIDTH / 375.0
+                return self * XBScreenW / 375.0
             }else {
-                return self * SCREEN_HEIGHT / 667.0
+                return self * XBScreenH / 667.0
             }
         }
     }
