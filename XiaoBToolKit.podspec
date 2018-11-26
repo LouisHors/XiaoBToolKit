@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source = { :path => '.' }
-  s.source       = { :git => "https://github.com/LouisHors/XiaoBToolKit.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/LouisHors/XiaoBToolKit.git", :branch => "master", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
