@@ -1,6 +1,6 @@
 //
 //  XBKit.swift
-//  XiaobToolKit
+//  XiaoBToolKit
 //
 //  Created by 刘豪 on 2018/8/14.
 //
