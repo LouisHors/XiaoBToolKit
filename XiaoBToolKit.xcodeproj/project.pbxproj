@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF8C9CDD21ABA36000B69FC7 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9CDC21ABA36000B69FC7 /* Optional+Extension.swift */; };
+		BF8C9CE221ABA44200B69FC7 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9CE021ABA44200B69FC7 /* Validatable.swift */; };
+		BF8C9CE321ABA44200B69FC7 /* RegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9CE121ABA44200B69FC7 /* RegEx.swift */; };
+		BF8C9CE521ABA48B00B69FC7 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9CE421ABA48B00B69FC7 /* UIDevice+Extension.swift */; };
 		BFA4FB7C21AABF9200D92262 /* XiaoBToolKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA4FB7A21AABF9200D92262 /* XiaoBToolKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFA4FB8621AAC02600D92262 /* XBNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4FB8221AAC02600D92262 /* XBNotification.swift */; };
 		BFA4FB8721AAC02600D92262 /* UIColor+XBKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA4FB8321AAC02600D92262 /* UIColor+XBKit.swift */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF8C9CDC21ABA36000B69FC7 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		BF8C9CE021ABA44200B69FC7 /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		BF8C9CE121ABA44200B69FC7 /* RegEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegEx.swift; sourceTree = "<group>"; };
+		BF8C9CE421ABA48B00B69FC7 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		BFA4FB7721AABF9200D92262 /* XiaoBToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XiaoBToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA4FB7A21AABF9200D92262 /* XiaoBToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaoBToolKit.h; sourceTree = "<group>"; };
 		BFA4FB7B21AABF9200D92262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +43,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF8C9CDE21ABA40A00B69FC7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C9CE421ABA48B00B69FC7 /* UIDevice+Extension.swift */,
+				BF8C9CDC21ABA36000B69FC7 /* Optional+Extension.swift */,
+				BFA4FB8521AAC02600D92262 /* String+XBKit.swift */,
+				BFA4FB8321AAC02600D92262 /* UIColor+XBKit.swift */,
+				BFA4FB8421AAC02600D92262 /* XBKit.swift */,
+				BFA4FB8221AAC02600D92262 /* XBNotification.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BF8C9CDF21ABA42200B69FC7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C9CE121ABA44200B69FC7 /* RegEx.swift */,
+				BF8C9CE021ABA44200B69FC7 /* Validatable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		BFA4FB6D21AABF9200D92262 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +84,8 @@
 		BFA4FB7921AABF9200D92262 /* XiaoBToolKit */ = {
 			isa = PBXGroup;
 			children = (
-				BFA4FB8521AAC02600D92262 /* String+XBKit.swift */,
-				BFA4FB8321AAC02600D92262 /* UIColor+XBKit.swift */,
-				BFA4FB8421AAC02600D92262 /* XBKit.swift */,
-				BFA4FB8221AAC02600D92262 /* XBNotification.swift */,
+				BF8C9CDF21ABA42200B69FC7 /* Protocol */,
+				BF8C9CDE21ABA40A00B69FC7 /* Extension */,
 				BFA4FB7A21AABF9200D92262 /* XiaoBToolKit.h */,
 				BFA4FB7B21AABF9200D92262 /* Info.plist */,
 			);
@@ -144,9 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA4FB8721AAC02600D92262 /* UIColor+XBKit.swift in Sources */,
+				BF8C9CE521ABA48B00B69FC7 /* UIDevice+Extension.swift in Sources */,
+				BF8C9CE221ABA44200B69FC7 /* Validatable.swift in Sources */,
 				BFA4FB8921AAC02600D92262 /* String+XBKit.swift in Sources */,
+				BF8C9CDD21ABA36000B69FC7 /* Optional+Extension.swift in Sources */,
 				BFA4FB8621AAC02600D92262 /* XBNotification.swift in Sources */,
 				BFA4FB8821AAC02600D92262 /* XBKit.swift in Sources */,
+				BF8C9CE321ABA44200B69FC7 /* RegEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
